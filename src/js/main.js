@@ -10,14 +10,20 @@ Alpine.start()
 // Smooth scroll for navigation links
 document.addEventListener('DOMContentLoaded', () => {
     const links = document.querySelectorAll('a[href^="#"]')
-    
+    window.scrollTo({
+  top: target.offsetTop - 80,
+  behavior: 'smooth'
+})
+
     links.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault()
             const target = document.querySelector(link.getAttribute('href'))
             if (target) {
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+            const y = target.getBoundingClientRect().top + window.pageYOffset - 80
+            window.scrollTo({ top: y, behavior: 'smooth' })
             }
+
         })
     })
 })
