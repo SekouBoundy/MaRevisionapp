@@ -1,0 +1,30 @@
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite"
+  },
+  "description": "��#\u0000 \u0000M\u0000a\u0000R\u0000e\u0000v\u0000i\u0000s\u0000i\u0000o\u0000n\u0000a\u0000p\u0000p\u0000\r\u0000 \u0000\r\u0000 \u0000#\u0000 \u0000R\u0000e\u0000a\u0000c\u0000t\u0000 \u0000+\u0000 \u0000V\u0000i\u0000t\u0000e\u0000\r\u0000 \u0000n\u0000p\u0000m\u0000 \u0000r\u0000u\u0000n\u0000 \u0000d\u0000e\u0000v\u0000\r\u0000 \u0000\r\u0000 \u0000#\u0000 \u0000R\u0000u\u0000n\u0000 \u0000a\u0000s\u0000 \u0000a\u0000d\u0000m\u0000i\u0000n\u0000i\u0000s\u0000t\u0000o\u0000r\u0000 \u0000\r\u0000 \u0000S\u0000e\u0000t\u0000-\u0000E\u0000x\u0000e\u0000c\u0000u\u0000t\u0000i\u0000o\u0000n\u0000P\u0000o\u0000l\u0000i\u0000c\u0000y\u0000 \u0000-\u0000E\u0000x\u0000e\u0000c\u0000u\u0000t\u0000i\u0000o\u0000n\u0000P\u0000o\u0000l\u0000i\u0000c\u0000y\u0000 \u0000R\u0000e\u0000m\u0000o\u0000t\u0000e\u0000S\u0000i\u0000g\u0000n\u0000e\u0000d\u0000 \u0000-\u0000S\u0000c\u0000o\u0000p\u0000e\u0000 \u0000C\u0000u\u0000r\u0000r\u0000e\u0000n\u0000t\u0000U\u0000s\u0000e\u0000r\u0000",
+  "main": "postcss.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SekouBoundy/MaRevisionapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/SekouBoundy/MaRevisionapp/issues"
+  },
+  "homepage": "https://github.com/SekouBoundy/MaRevisionapp#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.14",
+    "vite": "^7.1.9"
+  },
+  "dependencies": {
+    "alpinejs": "^3.15.0"
+  }
+}
