@@ -49,9 +49,14 @@
     
     <!-- Custom Styles -->
     <style>
-      body { 
-        font-family: 'Inter', sans-serif; 
-      }
+      
+      body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background: #FAFAFA;
+    overflow-x: hidden;
+    }
       
       h1, h2, h3, h4, h5, h6 { 
         font-family: 'Poppins', sans-serif; 
@@ -562,6 +567,46 @@
                     </h3>
                     <p class="text-gray-600 leading-relaxed">
                         Pas de connexion ? Pas de problème ! Tout le contenu est accessible même sans internet.
+                    </p>
+                </div>
+
+            </div>
+            <!-- Profile + Histoire Grid -->
+            <div class="grid md:grid-cols-2 gap-8 mb-16 mt-20 max-w-5xl mx-auto">
+                
+                <!-- Left Card: Sekou Profile -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg text-center">
+                    <div class="relative inline-block mb-6">
+                        <div class="w-40 h-auto rounded-full overflow-hidden mx-auto shadow-xl ring-4 ring-primary/20">
+                            <img src="/assets/images/sekou-profile.jpg" alt="Sekou Boundy" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <h3 class="text-3xl font-display font-bold text-primary mb-2">
+                        Sekou Boundy
+                    </h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        <strong>Étudiant passionné & Développeur</strong><br>
+                        Né au Mali, j'ai vécu les défis de l'éducation dans notre pays. Après avoir vu mes amis galérer avec les révisions, j'ai décidé de créer LA solution qui manquait ! <span class="text-2xl">ML✨</span>
+                    </p>
+                </div>
+
+                <!-- Right Card: Notre Histoire -->
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 shadow-lg">
+                    <div class="relative inline-block mb-6">
+                        <div class="absolute inset-0 bg-gradient-to-br from-purple-400 to-pink-500 rounded-2xl blur-xl opacity-50"></div>
+                        <div class="relative w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center">
+                            <span class="text-5xl">🌟</span>
+                        </div>
+                    </div>
+                    <h3 class="text-3xl font-display font-bold text-gray-900 mb-4">
+                        Notre Histoire – MaRevision
+                    </h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        MaRevision, c'est plus qu'une simple application pour réviser. C'est "<strong>Moi, mon Rêve, ma Vision, ma Révision.</strong>"<br><br>
+                        <strong>Ma</strong>, parce que tout apprentissage commence par soi-même.<br>
+                        <strong>Rêv</strong>, pour le rêve d'un bel avenir, d'un diplôme, d'une réussite.<br>
+                        <strong>Vision</strong>, pour savoir clairement où l'on veut aller.<br>
+                        <strong>Révision</strong>, pour travailler sérieusement, régulièrement et réussir.
                     </p>
                 </div>
 
