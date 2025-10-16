@@ -22,6 +22,8 @@
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/heroicons@2.0.18/24/outline/index.js"></script>
+
     
     <!-- Tailwind Config -->
     <script>
@@ -69,11 +71,12 @@
       /* Infinite Horizontal Scroll */
       @keyframes scroll-left {
         0% { transform: translateX(0); }
-        100% { transform: translateX(-50%); }
+        100% { transform: translateX(-100%); }
       }
       
       .animate-scroll-left {
         animation: scroll-left 10s linear infinite;
+
       }
       
       .animate-scroll-left:hover {
@@ -211,6 +214,12 @@
         padding: .5rem .9rem; border-radius: .75rem; font-weight: 700;
         box-shadow: 0 10px 25px rgba(0,0,0,.15);
         animation: float 4s ease-in-out infinite;
+        }
+
+        @media (min-width: 768px) {
+            .md\:left-12 {
+                left: 12rem;
+            }
         }
 
 
@@ -371,10 +380,12 @@
                 <!-- Feature 1: Quiz -->
                 <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift group">
                     <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                        <span class="text-4xl">📝</span>
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
                     </div>
                     <h3 class="text-2xl font-display font-bold text-gray-900 mb-3">
-                        Programme Officiel Mali 🇲🇱
+                        Programme officiel du Mali 🇲🇱
                     </h3>
                     <p class="text-gray-600 leading-relaxed mb-4">
                         Contenus 100% alignés sur le curriculum malien du fondamental au lycée. Préparation optimale pour DEF et BAC.
@@ -390,13 +401,15 @@
                 <!-- Feature 2: Cours -->
                 <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift group">
                     <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                        <span class="text-4xl">📚</span>
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                        </svg>
                     </div>
                     <h3 class="text-2xl font-display font-bold text-gray-900 mb-3">
                         Quiz interactifs et amusants 🎮
                     </h3>
                     <p class="text-gray-600 leading-relaxed mb-4">
-                        Des centen de questions gamifiées avec corrections détaillées et explications vidéo pour chaque concept.
+                        Des centaines de questions gamifiées avec corrections détaillées et explications vidéo pour chaque concept.
                     </p>
                     <div class="flex items-center text-purple-600 font-semibold">
                         <span>Tous niveaux inclus</span>
@@ -409,7 +422,9 @@
                 <!-- Feature 3: Progression -->
                 <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift group">
                     <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                        <span class="text-4xl">📈</span>
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                        </svg>
                     </div>
                     <h3 class="text-2xl font-display font-bold text-gray-900 mb-3">
                         Suivi de Progression
@@ -466,7 +481,9 @@
                 <!-- Feature 6: Mode Hors Ligne -->
                 <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift group">
                     <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                        <span class="text-4xl">📴</span>
+                        <svg class="w-14 h-14 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636a9 9 0 010 12.728m0 0l-2.829-2.829m2.829 2.829L21 21M15.536 8.464a5 5 0 010 7.072m0 0l-2.829-2.829m-4.243 2.829a4.978 4.978 0 01-1.414-2.83m-1.414 5.658a9 9 0 01-2.167-9.238m7.824 2.167a1 1 0 111.414 1.414m-1.414-1.414L3 3"/>
+                        </svg>
                     </div>
                     <h3 class="text-2xl font-display font-bold text-gray-900 mb-3">
                         Mode Hors Ligne
@@ -511,7 +528,9 @@
                     <div class="relative inline-block mb-6">
                         <div class="absolute inset-0 bg-green-400 rounded-full blur-xl opacity-50 group-hover:opacity-75 transition-opacity"></div>
                         <div class="relative w-24 h-24 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
-                            <span class="text-5xl">💯</span>
+                            <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
                         </div>
                     </div>
                     <h3 class="text-2xl font-display font-bold text-gray-900 mb-3">
@@ -527,7 +546,9 @@
                     <div class="relative inline-block mb-6">
                         <div class="absolute inset-0 bg-red-400 rounded-full blur-xl opacity-50 group-hover:opacity-75 transition-opacity"></div>
                         <div class="relative w-24 h-24 bg-gradient-to-br from-red-400 to-red-600 rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
-                            <span class="text-5xl">🚫</span>
+                            <svg class="w-14 h-14 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/>
+                            </svg>
                         </div>
                     </div>
                     <h3 class="text-2xl font-display font-bold text-gray-900 mb-3">
@@ -543,14 +564,16 @@
                     <div class="relative inline-block mb-6">
                         <div class="absolute inset-0 bg-yellow-400 rounded-full blur-xl opacity-50 group-hover:opacity-75 transition-opacity"></div>
                         <div class="relative w-24 h-24 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
-                            <span class="text-5xl">🇲🇱</span>
+                            <svg class="w-14 h-14 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
                         </div>
                     </div>
                     <h3 class="text-2xl font-display font-bold text-gray-900 mb-3">
                         Made in Mali
                     </h3>
                     <p class="text-gray-600 leading-relaxed">
-                        Créé par Sekou Boundy pour l'amour du pays. Adapté au système éducatif malien et à votre réalité.
+                         Conçu au Mali, pour les étudiants maliens. Programmes adaptés au système éducatif national.
                     </p>
                 </div>
 
@@ -559,7 +582,9 @@
                     <div class="relative inline-block mb-6">
                         <div class="absolute inset-0 bg-blue-400 rounded-full blur-xl opacity-50 group-hover:opacity-75 transition-opacity"></div>
                         <div class="relative w-24 h-24 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
-                            <span class="text-5xl">📴</span>
+                            <svg class="w-14 h-14 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636a9 9 0 010 12.728m0 0l-2.829-2.829m2.829 2.829L21 21M15.536 8.464a5 5 0 010 7.072m0 0l-2.829-2.829m-4.243 2.829a4.978 4.978 0 01-1.414-2.83m-1.414 5.658a9 9 0 01-2.167-9.238m7.824 2.167a1 1 0 111.414 1.414m-1.414-1.414L3 3"/>
+                            </svg>
                         </div>
                     </div>
                     <h3 class="text-2xl font-display font-bold text-gray-900 mb-3">
@@ -586,7 +611,7 @@
                     </h3>
                     <p class="text-gray-700 leading-relaxed">
                         <strong>Étudiant passionné & Développeur</strong><br>
-                        Né au Mali, j'ai vécu les défis de l'éducation dans notre pays. Après avoir vu mes amis galérer avec les révisions, j'ai décidé de créer LA solution qui manquait ! <span class="text-2xl">ML✨</span>
+                        Né au Mali, j'ai vécu les défis de l'éducation dans notre pays. Après avoir vu mes amis galérer avec les révisions, j'ai décidé de créer la solution qui manquait ! <span class="text-2xl">🇲🇱✨</span>
                     </p>
                 </div>
 
@@ -676,17 +701,17 @@
                     <div class="level-badge">
                         <span class="text-2xl">🧪</span>
                         <span class="font-semibold text-gray-700">TSEXP</span>
-                        <span class="text-xs text-gray-500">(Science Expérimentale)</span>
+                        <span class="text-xs text-gray-500">(Sciences Expérimentales)</span>
                     </div>
                     <div class="level-badge">
                         <span class="text-2xl">📊</span>
                         <span class="font-semibold text-gray-700">TSECO</span>
-                        <span class="text-xs text-gray-500">(Science Économique)</span>
+                        <span class="text-xs text-gray-500">(Sciences Économiques)</span>
                     </div>
                     <div class="level-badge">
                         <span class="text-2xl">👥</span>
                         <span class="font-semibold text-gray-700">TSS</span>
-                        <span class="text-xs text-gray-500">(Science Sociale)</span>
+                        <span class="text-xs text-gray-500">(Sciences Sociales)</span>
                     </div>
                     <div class="level-badge">
                         <span class="text-2xl">🎨</span>
@@ -832,7 +857,7 @@
                                     
                                     <!-- Screen -->
                                     <!-- Screen avec Scroll Interactif -->
-                                    <div class="w-[320px] h-[640px] rounded-[2.5rem] overflow-hidden relative group">
+                                    <div class="w-[280px] h-[600px] rounded-[2.5rem] overflow-hidden relative group">
                                         
                                         <!-- Scrollable Container - LA CLASSE scrollbar-hide DOIT ÊTRE ICI -->
                                         <div class="w-full h-full overflow-y-auto scrollbar-hide bg-white scroll-smooth">
